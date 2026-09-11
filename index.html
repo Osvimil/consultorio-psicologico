@@ -1,0 +1,1622 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+
+    <!-- =====================================================
+         CONFIGURACIÓN DEL DOCUMENTO
+    ====================================================== -->
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="PsicoBalance - Consultorio psicológico especializado en terapia cognitivo-conductual."
+    >
+
+    <meta
+        name="author"
+        content="PsicoBalance"
+    >
+
+    <meta
+        name="robots"
+        content="index, follow"
+    >
+
+    <!-- Color utilizado por algunos navegadores móviles -->
+    <meta
+        name="theme-color"
+        content="#6B8F8A"
+    >
+
+    <!-- =====================================================
+         OPEN GRAPH
+         Se utilizará posteriormente para compartir la página
+         en redes sociales.
+    ====================================================== -->
+
+    <meta
+        property="og:title"
+        content="PsicoBalance | Terapia Cognitivo-Conductual"
+    >
+
+    <meta
+        property="og:description"
+        content="Espacio profesional dedicado al bienestar emocional y al desarrollo de herramientas para afrontar diferentes situaciones de la vida."
+    >
+
+    <meta
+        property="og:type"
+        content="website"
+    >
+
+    <meta
+        property="og:locale"
+        content="es_MX"
+    >
+
+    <!-- =====================================================
+         FAVICON
+         Posteriormente colocaremos el archivo real.
+    ====================================================== -->
+
+    <link
+        rel="icon"
+        href="assets/icons/favicon.svg"
+        type="image/svg+xml"
+    >
+
+    <!-- =====================================================
+         CSS
+         Estos archivos serán creados en el siguiente módulo.
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="css/reset.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/variables.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/layout.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/components.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/animations.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/responsive.css"
+    >
+
+    <title>
+        PsicoBalance | Terapia Cognitivo-Conductual
+    </title>
+
+</head>
+
+
+<body>
+
+    <!-- =====================================================
+         HEADER
+    ====================================================== -->
+
+    <header class="site-header" id="inicio">
+
+        <!-- =================================================
+             NAVEGACIÓN PRINCIPAL
+        ================================================== -->
+
+        <nav
+            class="navbar"
+            aria-label="Navegación principal"
+        >
+
+            <!-- LOGOTIPO -->
+
+            <a
+                href="#inicio"
+                class="navbar__logo"
+                aria-label="PsicoBalance - Inicio"
+            >
+
+                <span class="navbar__logo-icon">
+                    ◉
+                </span>
+
+                <span class="navbar__logo-text">
+                    PsicoBalance
+                </span>
+
+            </a>
+
+
+            <!-- BOTÓN MENÚ MÓVIL -->
+
+            <button
+                class="navbar__toggle"
+                type="button"
+                aria-label="Abrir menú"
+                aria-expanded="false"
+                aria-controls="menu-principal"
+            >
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
+
+            <!-- MENÚ PRINCIPAL -->
+
+            <div
+                class="navbar__menu"
+                id="menu-principal"
+            >
+
+                <ul class="navbar__list">
+
+                    <li class="navbar__item">
+
+                        <a
+                            href="#inicio"
+                            class="navbar__link"
+                        >
+                            Inicio
+                        </a>
+
+                    </li>
+
+
+                    <li class="navbar__item">
+
+                        <a
+                            href="#sobre-nosotros"
+                            class="navbar__link"
+                        >
+                            Nosotros
+                        </a>
+
+                    </li>
+
+
+                    <li class="navbar__item navbar__item--dropdown">
+
+                        <button
+                            class="navbar__link navbar__dropdown-toggle"
+                            type="button"
+                            aria-expanded="false"
+                        >
+                            Terapia
+                            <span aria-hidden="true">⌄</span>
+                        </button>
+
+
+                        <ul class="navbar__dropdown">
+
+                            <li>
+
+                                <a href="#terapia-conductual">
+                                    Terapia conductual
+                                </a>
+
+                            </li>
+
+                            <li>
+
+                                <a href="#servicios">
+                                    Servicios
+                                </a>
+
+                            </li>
+
+                            <li>
+
+                                <a href="#proceso">
+                                    Proceso terapéutico
+                                </a>
+
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+
+                    <li class="navbar__item">
+
+                        <a
+                            href="#preguntas"
+                            class="navbar__link"
+                        >
+                            Preguntas frecuentes
+                        </a>
+
+                    </li>
+
+
+                    <li class="navbar__item">
+
+                        <a
+                            href="#testimonios"
+                            class="navbar__link"
+                        >
+                            Testimonios
+                        </a>
+
+                    </li>
+
+
+                    <li class="navbar__item">
+
+                        <a
+                            href="#contacto"
+                            class="navbar__link navbar__link--button"
+                        >
+                            Agendar cita
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- =====================================================
+         CONTENIDO PRINCIPAL
+    ====================================================== -->
+
+    <main>
+
+
+        <!-- =================================================
+             HERO
+        ================================================== -->
+
+        <section
+            class="hero"
+            id="hero"
+            aria-labelledby="hero-title"
+        >
+
+            <!-- Elemento que posteriormente utilizaremos
+                 para el efecto Parallax -->
+
+            <div
+                class="hero__background"
+                aria-hidden="true"
+            ></div>
+
+
+            <div class="container hero__container">
+
+                <div class="hero__content">
+
+                    <p class="hero__eyebrow">
+                        Terapia psicológica profesional
+                    </p>
+
+
+                    <h1 id="hero-title">
+
+                        Construye herramientas para
+                        <span>vivir mejor</span>
+
+                    </h1>
+
+
+                    <p class="hero__description">
+
+                        Un espacio seguro y profesional para
+                        comprender tus pensamientos, emociones
+                        y conductas, y desarrollar estrategias
+                        que te ayuden a afrontar los desafíos
+                        de la vida.
+
+                    </p>
+
+
+                    <div class="hero__actions">
+
+                        <a
+                            href="#contacto"
+                            class="button button--primary"
+                        >
+                            Agendar una cita
+                        </a>
+
+
+                        <a
+                            href="#terapia-conductual"
+                            class="button button--secondary"
+                        >
+                            Conocer la terapia
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="hero__visual">
+
+                    <div class="hero__decoration hero__decoration--one"></div>
+
+                    <div class="hero__decoration hero__decoration--two"></div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             SOBRE NOSOTROS
+        ================================================== -->
+
+        <section
+            class="section about"
+            id="sobre-nosotros"
+            aria-labelledby="about-title"
+        >
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="section-heading__eyebrow">
+                        Conócenos
+                    </p>
+
+                    <h2 id="about-title">
+                        Un espacio pensado para ti
+                    </h2>
+
+                    <p>
+                        Nuestro objetivo es ofrecer un espacio
+                        profesional, respetuoso y libre de juicios.
+                    </p>
+
+                </div>
+
+
+                <div class="about__grid">
+
+                    <div class="about__image">
+
+                        <img
+                            src="assets/images/consultorio.jpg"
+                            alt="Interior de un consultorio psicológico"
+                            loading="lazy"
+                        >
+
+                    </div>
+
+
+                    <div class="about__content">
+
+                        <h3>
+                            Acompañamiento psicológico basado
+                            en evidencia
+                        </h3>
+
+                        <p>
+
+                            La terapia psicológica puede ayudarte
+                            a comprender la relación entre tus
+                            pensamientos, emociones y conductas.
+
+                        </p>
+
+                        <p>
+
+                            En PsicoBalance trabajamos mediante
+                            estrategias estructuradas y objetivos
+                            terapéuticos definidos conjuntamente.
+
+                        </p>
+
+
+                        <a
+                            href="#contacto"
+                            class="text-link"
+                        >
+                            Conoce nuestro enfoque →
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             TERAPIA CONDUCTUAL
+        ================================================== -->
+
+        <section
+            class="section therapy"
+            id="terapia-conductual"
+            aria-labelledby="therapy-title"
+        >
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="section-heading__eyebrow">
+                        Nuestro enfoque
+                    </p>
+
+                    <h2 id="therapy-title">
+                        ¿Qué es la terapia conductual?
+                    </h2>
+
+                    <p>
+
+                        Un enfoque que busca comprender cómo
+                        determinadas conductas se relacionan con
+                        el contexto y pueden modificarse mediante
+                        estrategias terapéuticas.
+
+                    </p>
+
+                </div>
+
+
+                <!-- TABS -->
+
+                <div class="tabs">
+
+                    <div
+                        class="tabs__navigation"
+                        role="tablist"
+                        aria-label="Información sobre terapia"
+                    >
+
+                        <button
+                            class="tabs__button tabs__button--active"
+                            type="button"
+                            role="tab"
+                            aria-selected="true"
+                            aria-controls="tab-1"
+                            id="tab-button-1"
+                        >
+                            Pensamientos
+                        </button>
+
+
+                        <button
+                            class="tabs__button"
+                            type="button"
+                            role="tab"
+                            aria-selected="false"
+                            aria-controls="tab-2"
+                            id="tab-button-2"
+                        >
+                            Emociones
+                        </button>
+
+
+                        <button
+                            class="tabs__button"
+                            type="button"
+                            role="tab"
+                            aria-selected="false"
+                            aria-controls="tab-3"
+                            id="tab-button-3"
+                        >
+                            Conductas
+                        </button>
+
+                    </div>
+
+
+                    <div class="tabs__content">
+
+                        <article
+                            class="tabs__panel tabs__panel--active"
+                            id="tab-1"
+                            role="tabpanel"
+                            aria-labelledby="tab-button-1"
+                        >
+
+                            <h3>
+                                Identificar patrones de pensamiento
+                            </h3>
+
+                            <p>
+                                Aprender a reconocer pensamientos
+                                automáticos y analizar cómo influyen
+                                en nuestra experiencia cotidiana.
+                            </p>
+
+                        </article>
+
+
+                        <article
+                            class="tabs__panel"
+                            id="tab-2"
+                            role="tabpanel"
+                            aria-labelledby="tab-button-2"
+                            hidden
+                        >
+
+                            <h3>
+                                Comprender las emociones
+                            </h3>
+
+                            <p>
+                                Desarrollar estrategias para reconocer
+                                y gestionar diferentes experiencias
+                                emocionales.
+                            </p>
+
+                        </article>
+
+
+                        <article
+                            class="tabs__panel"
+                            id="tab-3"
+                            role="tabpanel"
+                            aria-labelledby="tab-button-3"
+                            hidden
+                        >
+
+                            <h3>
+                                Modificar conductas
+                            </h3>
+
+                            <p>
+                                Trabajar progresivamente sobre hábitos
+                                y conductas para favorecer cambios
+                                funcionales.
+                            </p>
+
+                        </article>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             SERVICIOS
+        ================================================== -->
+
+        <section
+            class="section services"
+            id="servicios"
+            aria-labelledby="services-title"
+        >
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="section-heading__eyebrow">
+                        Servicios
+                    </p>
+
+                    <h2 id="services-title">
+                        ¿En qué podemos ayudarte?
+                    </h2>
+
+                </div>
+
+
+                <div class="services__grid">
+
+
+                    <article class="service-card">
+
+                        <div
+                            class="service-card__icon"
+                            aria-hidden="true"
+                        >
+                            ◌
+                        </div>
+
+                        <h3>
+                            Terapia individual
+                        </h3>
+
+                        <p>
+                            Espacios individuales orientados a trabajar
+                            objetivos terapéuticos específicos.
+                        </p>
+
+                        <a href="#contacto">
+                            Más información
+                        </a>
+
+                    </article>
+
+
+                    <article class="service-card">
+
+                        <div
+                            class="service-card__icon"
+                            aria-hidden="true"
+                        >
+                            ◎
+                        </div>
+
+                        <h3>
+                            Manejo de ansiedad
+                        </h3>
+
+                        <p>
+                            Desarrollo de herramientas para afrontar
+                            situaciones relacionadas con ansiedad y estrés.
+                        </p>
+
+                        <a href="#contacto">
+                            Más información
+                        </a>
+
+                    </article>
+
+
+                    <article class="service-card">
+
+                        <div
+                            class="service-card__icon"
+                            aria-hidden="true"
+                        >
+                            ◇
+                        </div>
+
+                        <h3>
+                            Desarrollo de hábitos
+                        </h3>
+
+                        <p>
+                            Identificación de patrones y construcción
+                            progresiva de hábitos funcionales.
+                        </p>
+
+                        <a href="#contacto">
+                            Más información
+                        </a>
+
+                    </article>
+
+
+                    <article class="service-card">
+
+                        <div
+                            class="service-card__icon"
+                            aria-hidden="true"
+                        >
+                            ✦
+                        </div>
+
+                        <h3>
+                            Desarrollo personal
+                        </h3>
+
+                        <p>
+                            Acompañamiento para trabajar objetivos
+                            personales y mejorar habilidades de afrontamiento.
+                        </p>
+
+                        <a href="#contacto">
+                            Más información
+                        </a>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             PROCESO TERAPÉUTICO
+        ================================================== -->
+
+        <section
+            class="section process"
+            id="proceso"
+            aria-labelledby="process-title"
+        >
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="section-heading__eyebrow">
+                        Nuestro proceso
+                    </p>
+
+                    <h2 id="process-title">
+                        ¿Cómo funciona la terapia?
+                    </h2>
+
+                </div>
+
+
+                <ol class="process__timeline">
+
+
+                    <li class="process__item">
+
+                        <span class="process__number">
+                            01
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Primera sesión
+                            </h3>
+
+                            <p>
+                                Conoceremos tu situación y los motivos
+                                por los que buscas acompañamiento.
+                            </p>
+
+                        </div>
+
+                    </li>
+
+
+                    <li class="process__item">
+
+                        <span class="process__number">
+                            02
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Evaluación
+                            </h3>
+
+                            <p>
+                                Identificaremos objetivos y patrones
+                                relevantes para el proceso terapéutico.
+                            </p>
+
+                        </div>
+
+                    </li>
+
+
+                    <li class="process__item">
+
+                        <span class="process__number">
+                            03
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Intervención
+                            </h3>
+
+                            <p>
+                                Trabajaremos mediante estrategias
+                                adaptadas a tus objetivos.
+                            </p>
+
+                        </div>
+
+                    </li>
+
+
+                    <li class="process__item">
+
+                        <span class="process__number">
+                            04
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Seguimiento
+                            </h3>
+
+                            <p>
+                                Revisaremos avances y ajustaremos
+                                las estrategias cuando sea necesario.
+                            </p>
+
+                        </div>
+
+                    </li>
+
+                </ol>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             TESTIMONIOS
+        ================================================== -->
+
+        <section
+            class="section testimonials"
+            id="testimonios"
+            aria-labelledby="testimonials-title"
+        >
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="section-heading__eyebrow">
+                        Experiencias
+                    </p>
+
+                    <h2 id="testimonials-title">
+                        Lo que dicen nuestros pacientes
+                    </h2>
+
+                </div>
+
+
+                <!-- CAROUSEL -->
+
+                <div
+                    class="carousel"
+                    aria-label="Testimonios de pacientes"
+                >
+
+                    <div class="carousel__track">
+
+
+                        <article class="testimonial">
+
+                            <blockquote>
+
+                                <p>
+                                    "El proceso me ayudó a entender
+                                    mejor mis patrones de pensamiento
+                                    y a desarrollar nuevas estrategias."
+                                </p>
+
+                                <footer>
+                                    Paciente anónimo
+                                </footer>
+
+                            </blockquote>
+
+                        </article>
+
+
+                        <article class="testimonial">
+
+                            <blockquote>
+
+                                <p>
+                                    "Encontré un espacio donde pude
+                                    hablar de mis preocupaciones sin
+                                    sentirme juzgado."
+                                </p>
+
+                                <footer>
+                                    Paciente anónimo
+                                </footer>
+
+                            </blockquote>
+
+                        </article>
+
+
+                        <article class="testimonial">
+
+                            <blockquote>
+
+                                <p>
+                                    "Aprendí herramientas que puedo
+                                    aplicar en situaciones de mi vida
+                                    cotidiana."
+                                </p>
+
+                                <footer>
+                                    Paciente anónimo
+                                </footer>
+
+                            </blockquote>
+
+                        </article>
+
+
+                    </div>
+
+
+                    <button
+                        class="carousel__button carousel__button--prev"
+                        type="button"
+                        aria-label="Testimonio anterior"
+                    >
+                        ←
+                    </button>
+
+
+                    <button
+                        class="carousel__button carousel__button--next"
+                        type="button"
+                        aria-label="Siguiente testimonio"
+                    >
+                        →
+                    </button>
+
+
+                    <div class="carousel__indicators">
+
+                        <button
+                            type="button"
+                            aria-label="Mostrar testimonio 1"
+                            aria-current="true"
+                        ></button>
+
+                        <button
+                            type="button"
+                            aria-label="Mostrar testimonio 2"
+                        ></button>
+
+                        <button
+                            type="button"
+                            aria-label="Mostrar testimonio 3"
+                        ></button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             PREGUNTAS FRECUENTES
+        ================================================== -->
+
+        <section
+            class="section faq"
+            id="preguntas"
+            aria-labelledby="faq-title"
+        >
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="section-heading__eyebrow">
+                        FAQ
+                    </p>
+
+                    <h2 id="faq-title">
+                        Preguntas frecuentes
+                    </h2>
+
+                </div>
+
+
+                <div class="accordion">
+
+
+                    <article class="accordion__item">
+
+                        <h3>
+
+                            <button
+                                class="accordion__button"
+                                type="button"
+                                aria-expanded="false"
+                            >
+                                ¿Cuánto dura una sesión?
+                            </button>
+
+                        </h3>
+
+                        <div
+                            class="accordion__content"
+                            hidden
+                        >
+
+                            <p>
+                                La duración de cada sesión será
+                                determinada de acuerdo con el modelo
+                                de atención y las necesidades del proceso.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="accordion__item">
+
+                        <h3>
+
+                            <button
+                                class="accordion__button"
+                                type="button"
+                                aria-expanded="false"
+                            >
+                                ¿La terapia es presencial o en línea?
+                            </button>
+
+                        </h3>
+
+                        <div
+                            class="accordion__content"
+                            hidden
+                        >
+
+                            <p>
+                                Se podrán ofrecer modalidades presencial
+                                y/o en línea, dependiendo de la disponibilidad
+                                del consultorio.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="accordion__item">
+
+                        <h3>
+
+                            <button
+                                class="accordion__button"
+                                type="button"
+                                aria-expanded="false"
+                            >
+                                ¿Cómo puedo solicitar una cita?
+                            </button>
+
+                        </h3>
+
+                        <div
+                            class="accordion__content"
+                            hidden
+                        >
+
+                            <p>
+                                Puedes utilizar nuestro formulario de
+                                contacto para solicitar información
+                                sobre disponibilidad.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="accordion__item">
+
+                        <h3>
+
+                            <button
+                                class="accordion__button"
+                                type="button"
+                                aria-expanded="false"
+                            >
+                                ¿La terapia funciona igual para todas
+                                las personas?
+                            </button>
+
+                        </h3>
+
+                        <div
+                            class="accordion__content"
+                            hidden
+                        >
+
+                            <p>
+                                Cada proceso terapéutico debe adaptarse
+                                a las características, necesidades y
+                                objetivos de cada persona.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             CONTACTO
+        ================================================== -->
+
+        <section
+            class="section contact"
+            id="contacto"
+            aria-labelledby="contact-title"
+        >
+
+            <div class="container">
+
+                <div class="contact__grid">
+
+
+                    <div class="contact__information">
+
+                        <p class="section-heading__eyebrow">
+                            Contacto
+                        </p>
+
+                        <h2 id="contact-title">
+                            Comienza tu proceso
+                        </h2>
+
+                        <p>
+                            Si deseas obtener más información sobre
+                            nuestros servicios, puedes enviarnos un
+                            mensaje.
+                        </p>
+
+
+                        <address>
+
+                            <p>
+                                <strong>Correo:</strong>
+                                <a href="mailto:contacto@psicobalance.example">
+                                    contacto@psicobalance.example
+                                </a>
+                            </p>
+
+
+                            <p>
+                                <strong>Teléfono:</strong>
+                                <a href="tel:+525500000000">
+                                    +52 55 0000 0000
+                                </a>
+                            </p>
+
+
+                            <p>
+                                <strong>Horario:</strong>
+                                Lunes a viernes, 09:00 - 20:00
+                            </p>
+
+                        </address>
+
+                    </div>
+
+
+                    <!-- FORMULARIO -->
+
+                    <div class="contact__form-container">
+
+                        <form
+                            class="contact-form"
+                            id="contact-form"
+                            novalidate
+                        >
+
+                            <div class="form-group">
+
+                                <label for="name">
+                                    Nombre
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="name"
+                                    name="name"
+                                    autocomplete="name"
+                                    required
+                                >
+
+                                <span
+                                    class="form-error"
+                                    id="name-error"
+                                ></span>
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="email">
+                                    Correo electrónico
+                                </label>
+
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    autocomplete="email"
+                                    required
+                                >
+
+                                <span
+                                    class="form-error"
+                                    id="email-error"
+                                ></span>
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="phone">
+                                    Teléfono
+                                </label>
+
+                                <input
+                                    type="tel"
+                                    id="phone"
+                                    name="phone"
+                                    autocomplete="tel"
+                                >
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="service">
+                                    Motivo de consulta
+                                </label>
+
+                                <select
+                                    id="service"
+                                    name="service"
+                                >
+
+                                    <option value="">
+                                        Selecciona una opción
+                                    </option>
+
+                                    <option value="individual">
+                                        Terapia individual
+                                    </option>
+
+                                    <option value="ansiedad">
+                                        Manejo de ansiedad
+                                    </option>
+
+                                    <option value="habitos">
+                                        Desarrollo de hábitos
+                                    </option>
+
+                                    <option value="informacion">
+                                        Solicitar información
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="message">
+                                    Mensaje
+                                </label>
+
+                                <textarea
+                                    id="message"
+                                    name="message"
+                                    rows="5"
+                                    required
+                                ></textarea>
+
+                                <span
+                                    class="form-error"
+                                    id="message-error"
+                                ></span>
+
+                            </div>
+
+
+                            <button
+                                class="button button--primary"
+                                type="submit"
+                            >
+                                Enviar solicitud
+                            </button>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             MODAL
+        ================================================== -->
+
+        <div
+            class="modal"
+            id="appointment-modal"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="modal-title"
+            hidden
+        >
+
+            <div class="modal__overlay"></div>
+
+
+            <div class="modal__content">
+
+                <button
+                    class="modal__close"
+                    type="button"
+                    aria-label="Cerrar ventana"
+                >
+                    ×
+                </button>
+
+
+                <h2 id="modal-title">
+                    Solicitar una cita
+                </h2>
+
+
+                <p>
+                    Completa el formulario de contacto para
+                    solicitar información sobre disponibilidad.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             TOAST
+        ================================================== -->
+
+        <div
+            class="toast"
+            id="toast"
+            role="status"
+            aria-live="polite"
+            aria-atomic="true"
+            hidden
+        >
+
+            <span class="toast__message">
+                Mensaje enviado correctamente.
+            </span>
+
+            <button
+                class="toast__close"
+                type="button"
+                aria-label="Cerrar notificación"
+            >
+                ×
+            </button>
+
+        </div>
+
+
+    </main>
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="site-footer">
+
+        <div class="container">
+
+            <div class="footer__grid">
+
+
+                <div class="footer__brand">
+
+                    <a
+                        href="#inicio"
+                        class="footer__logo"
+                    >
+                        PsicoBalance
+                    </a>
+
+                    <p>
+                        Espacio profesional dedicado al
+                        bienestar psicológico.
+                    </p>
+
+                </div>
+
+
+                <div class="footer__navigation">
+
+                    <h2>
+                        Navegación
+                    </h2>
+
+                    <ul>
+
+                        <li>
+                            <a href="#inicio">
+                                Inicio
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#sobre-nosotros">
+                                Nosotros
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#servicios">
+                                Servicios
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#preguntas">
+                                Preguntas frecuentes
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#contacto">
+                                Contacto
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <div class="footer__legal">
+
+                    <h2>
+                        Información
+                    </h2>
+
+                    <ul>
+
+                        <li>
+                            <a href="#">
+                                Aviso de privacidad
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                Términos y condiciones
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <div class="footer__social">
+
+                    <h2>
+                        Síguenos
+                    </h2>
+
+                    <ul>
+
+                        <li>
+                            <a
+                                href="#"
+                                aria-label="Instagram"
+                            >
+                                Instagram
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="#"
+                                aria-label="Facebook"
+                            >
+                                Facebook
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer__bottom">
+
+                <p>
+                    © 2026 PsicoBalance. Todos los derechos reservados.
+                </p>
+
+                <p>
+                    Sitio desarrollado con HTML5, CSS3 y JavaScript.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =====================================================
+         BOTÓN VOLVER ARRIBA
+    ====================================================== -->
+
+    <button
+        class="back-to-top"
+        id="back-to-top"
+        type="button"
+        aria-label="Volver al inicio"
+    >
+        ↑
+    </button>
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+         Lo conectaremos en módulos posteriores.
+    ====================================================== -->
+
+    <script
+        type="module"
+        src="js/app.js"
+    ></script>
+
+</body>
+
+</html>
