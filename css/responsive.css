@@ -1,0 +1,568 @@
+/* ==========================================================
+   PSICOBALANCE
+   RESPONSIVE DESIGN
+   ========================================================== */
+
+
+/* ==========================================================
+   1. TABLETS GRANDES / LAPTOPS PEQUEÑAS
+   <= 1200px
+   ========================================================== */
+
+   @media (max-width: 1200px) {
+
+    :root {
+        --container-padding: 1.25rem;
+    }
+
+
+    .services__grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+
+    .process__timeline {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+
+    .footer__grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+
+/* ==========================================================
+   2. TABLETS
+   <= 992px
+   ========================================================== */
+
+@media (max-width: 992px) {
+
+    .navbar__menu {
+        gap: var(--space-4);
+    }
+
+
+    .navbar__link {
+        font-size: var(--font-size-xs);
+    }
+
+
+    .about__grid {
+        grid-template-columns:
+            1fr;
+
+        gap: var(--space-10);
+    }
+
+
+    .about__content {
+        max-width: none;
+    }
+
+
+    .about__image {
+        min-height: 400px;
+    }
+
+
+    .therapy__grid {
+        grid-template-columns:
+            1fr;
+
+        gap: var(--space-8);
+    }
+
+
+    .contact__grid {
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .hero__title {
+        font-size: clamp(
+            2.5rem,
+            7vw,
+            4rem
+        );
+    }
+
+}
+
+
+/* ==========================================================
+   3. TABLETS PEQUEÑAS / MÓVILES GRANDES
+   <= 768px
+   ========================================================== */
+
+@media (max-width: 768px) {
+
+    :root {
+        --container-padding: 1rem;
+    }
+
+
+    .section {
+        padding-block: var(--space-16);
+    }
+
+
+    .section__header {
+        margin-bottom: var(--space-8);
+    }
+
+
+    .section__title {
+        font-size: var(--font-size-3xl);
+    }
+
+
+    .section__description {
+        font-size: var(--font-size-md);
+    }
+
+
+    /* ------------------------------------------------------
+       NAVBAR MOBILE
+       ------------------------------------------------------ */
+
+    .navbar {
+        min-height: 70px;
+    }
+
+
+    .navbar__toggle {
+        display: grid;
+
+        place-items: center;
+    }
+
+
+    .navbar__menu {
+        position: absolute;
+
+        top: 70px;
+
+        right: 0;
+
+        left: 0;
+
+        z-index: var(--z-dropdown);
+
+        display: none;
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 0;
+
+        margin: 0;
+
+        padding: var(--space-3);
+
+        background-color: var(--color-surface);
+
+        border-top: 1px solid var(--color-border-light);
+
+        box-shadow: var(--shadow-lg);
+    }
+
+
+    .navbar__menu.is-open {
+        display: flex;
+    }
+
+
+    .navbar__link {
+        min-height: 48px;
+
+        padding:
+            var(--space-3)
+            var(--space-4);
+    }
+
+
+    .navbar__link.is-active::after {
+        display: none;
+    }
+
+
+    .navbar__actions {
+        display: none;
+    }
+
+
+    /* ------------------------------------------------------
+       DROPDOWN MOBILE
+       ------------------------------------------------------ */
+
+    .dropdown__trigger {
+        width: 100%;
+
+        min-height: 48px;
+
+        justify-content: space-between;
+    }
+
+
+    .dropdown__menu {
+        position: static;
+
+        width: 100%;
+
+        margin-top: var(--space-2);
+
+        transform: none;
+
+        box-shadow: none;
+
+        border-color: var(--color-border-light);
+    }
+
+
+    .dropdown.is-open .dropdown__menu {
+        transform: none;
+    }
+
+
+    /* ------------------------------------------------------
+       HERO
+       ------------------------------------------------------ */
+
+    .hero {
+        min-height:
+            calc(100vh - 70px);
+    }
+
+
+    .hero__content {
+        padding-block: var(--space-10);
+    }
+
+
+    .hero__title {
+        font-size: clamp(
+            2.25rem,
+            9vw,
+            3.5rem
+        );
+    }
+
+
+    .hero__description {
+        font-size: var(--font-size-md);
+    }
+
+
+    .hero__actions {
+        align-items: stretch;
+
+        flex-direction: column;
+    }
+
+
+    .hero__actions .btn {
+        width: 100%;
+    }
+
+
+    /* ------------------------------------------------------
+       SERVICES
+       ------------------------------------------------------ */
+
+    .services__grid {
+        grid-template-columns:
+            1fr;
+    }
+
+
+    /* ------------------------------------------------------
+       PROCESS
+       ------------------------------------------------------ */
+
+    .process__timeline {
+        grid-template-columns:
+            1fr;
+    }
+
+
+    /* ------------------------------------------------------
+       TESTIMONIAL
+       ------------------------------------------------------ */
+
+    .testimonial {
+        padding: var(--space-6);
+    }
+
+
+    /* ------------------------------------------------------
+       FORM
+       ------------------------------------------------------ */
+
+    .form__grid {
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .form__group--full {
+        grid-column: auto;
+    }
+
+
+    /* ------------------------------------------------------
+       FOOTER
+       ------------------------------------------------------ */
+
+    .footer__grid {
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .footer__bottom {
+        align-items: flex-start;
+
+        flex-direction: column;
+    }
+
+
+    /* ------------------------------------------------------
+       MODAL
+       ------------------------------------------------------ */
+
+    .modal {
+        padding: var(--space-4);
+    }
+
+
+    .modal__content {
+        padding: var(--space-6);
+    }
+
+
+    /* ------------------------------------------------------
+       BACK TO TOP
+       ------------------------------------------------------ */
+
+    .back-to-top {
+        right: var(--space-4);
+
+        bottom: var(--space-4);
+    }
+
+
+    /* ------------------------------------------------------
+       TOAST
+       ------------------------------------------------------ */
+
+    .toast {
+        right: var(--space-4);
+
+        bottom: var(--space-4);
+
+        left: var(--space-4);
+
+        max-width: none;
+    }
+
+}
+
+
+/* ==========================================================
+   4. MÓVILES GRANDES
+   <= 480px
+   ========================================================== */
+
+@media (max-width: 480px) {
+
+    .section {
+        padding-block: var(--space-12);
+    }
+
+
+    .section__title {
+        font-size: var(--font-size-2xl);
+    }
+
+
+    .hero__title {
+        font-size: 2.25rem;
+    }
+
+
+    .hero__actions {
+        margin-top: var(--space-6);
+    }
+
+
+    .btn {
+        width: 100%;
+    }
+
+
+    .btn--large {
+        min-height: 52px;
+    }
+
+
+    .about__image {
+        min-height: 300px;
+    }
+
+
+    .service-card {
+        padding: var(--space-6);
+    }
+
+
+    .process__step {
+        padding: var(--space-5);
+    }
+
+
+    .tabs__list {
+        flex-direction: column;
+    }
+
+
+    .tabs__button {
+        width: 100%;
+
+        text-align: left;
+    }
+
+
+    .testimonial {
+        padding: var(--space-5);
+    }
+
+
+    .testimonial__quote {
+        font-size: var(--font-size-lg);
+    }
+
+
+    .contact__item {
+        gap: var(--space-3);
+    }
+
+
+    .modal__content {
+        padding:
+            var(--space-5);
+    }
+
+}
+
+
+/* ==========================================================
+   5. MÓVILES MUY PEQUEÑOS
+   <= 320px
+   ========================================================== */
+
+@media (max-width: 320px) {
+
+    :root {
+        --container-padding: 0.75rem;
+    }
+
+
+    .navbar {
+        min-height: 64px;
+    }
+
+
+    .navbar__menu {
+        top: 64px;
+    }
+
+
+    .hero {
+        min-height:
+            calc(100vh - 64px);
+    }
+
+
+    .hero__title {
+        font-size: 2rem;
+    }
+
+
+    .section__title {
+        font-size: 1.5rem;
+    }
+
+
+    .btn {
+        padding-inline: var(--space-4);
+
+        font-size: var(--font-size-sm);
+    }
+
+
+    .service-card {
+        padding: var(--space-5);
+    }
+
+
+    .modal {
+        padding: var(--space-2);
+    }
+
+
+    .modal__content {
+        padding: var(--space-4);
+    }
+
+}
+
+
+/* ==========================================================
+   6. PANTALLAS GRANDES
+   >= 1400px
+   ========================================================== */
+
+@media (min-width: 1400px) {
+
+    :root {
+        --container-max-width: 1320px;
+    }
+
+
+    .section {
+        padding-block: var(--space-24);
+    }
+
+
+    .hero__title {
+        font-size: var(--font-size-5xl);
+    }
+
+}
+
+
+/* ==========================================================
+   7. PANTALLAS MUY GRANDES
+   >= 1920px
+   ========================================================== */
+
+@media (min-width: 1920px) {
+
+    :root {
+        --container-max-width: 1440px;
+    }
+
+
+    .hero__content {
+        max-width: 800px;
+    }
+
+}
