@@ -1,0 +1,402 @@
+/* ==========================================================
+   PSICOBALANCE
+   LAYOUT
+   FLEXBOX + CSS GRID
+   ========================================================== */
+
+
+/* ==========================================================
+   1. CONTENEDOR
+   ========================================================== */
+
+   .container {
+    position: relative;
+}
+
+
+/* ==========================================================
+   2. HEADER
+   ========================================================== */
+
+.site-header {
+    position: relative;
+
+    z-index: var(--z-sticky);
+}
+
+
+/* ==========================================================
+   3. NAVBAR
+   ========================================================== */
+
+.navbar {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: var(--space-6);
+}
+
+
+/* ==========================================================
+   4. NAVBAR - LOGO
+   ========================================================== */
+
+.navbar__logo {
+    flex-shrink: 0;
+}
+
+
+/* ==========================================================
+   5. NAVBAR - MENÚ
+   ========================================================== */
+
+.navbar__menu {
+    display: flex;
+
+    align-items: center;
+
+    gap: var(--space-6);
+
+    margin-left: auto;
+}
+
+
+/* ==========================================================
+   6. NAVBAR - ACCIONES
+   ========================================================== */
+
+.navbar__actions {
+    display: flex;
+
+    align-items: center;
+
+    gap: var(--space-3);
+}
+
+
+/* ==========================================================
+   7. HERO
+   ========================================================== */
+
+.hero {
+    position: relative;
+
+    display: grid;
+
+    min-height: calc(100vh - 80px);
+
+    place-items: center;
+
+    overflow: hidden;
+}
+
+
+.hero__content {
+    position: relative;
+
+    z-index: 2;
+
+    width: 100%;
+
+    max-width: 720px;
+
+    margin-right: auto;
+}
+
+
+.hero__actions {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    align-items: center;
+
+    gap: var(--space-4);
+
+    margin-top: var(--space-8);
+}
+
+
+.hero__background {
+    position: absolute;
+
+    inset: 0;
+
+    z-index: 0;
+}
+
+
+/* ==========================================================
+   8. ABOUT
+   ========================================================== */
+
+.about__grid {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1fr)
+        minmax(0, 1fr);
+
+    align-items: center;
+
+    gap: var(--space-16);
+}
+
+
+.about__content {
+    max-width: 600px;
+}
+
+
+.about__image {
+    width: 100%;
+
+    min-height: 450px;
+
+    overflow: hidden;
+
+    border-radius: var(--radius-xl);
+
+    box-shadow: var(--shadow-lg);
+}
+
+
+/* ==========================================================
+   9. THERAPY
+   ========================================================== */
+
+.therapy__grid {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 0.8fr)
+        minmax(0, 1.2fr);
+
+    align-items: start;
+
+    gap: var(--space-12);
+}
+
+
+.therapy__tabs {
+    width: 100%;
+}
+
+
+.therapy__content {
+    width: 100%;
+}
+
+
+/* ==========================================================
+   10. SERVICES
+   ========================================================== */
+
+.services__grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+
+    gap: var(--space-6);
+}
+
+
+/* ==========================================================
+   11. SERVICE CARD
+   ========================================================== */
+
+.service-card {
+    display: flex;
+
+    flex-direction: column;
+
+    height: 100%;
+}
+
+
+/* ==========================================================
+   12. PROCESS
+   ========================================================== */
+
+.process__timeline {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+
+    gap: var(--space-8);
+}
+
+
+.process__step {
+    position: relative;
+}
+
+
+/* ==========================================================
+   13. TESTIMONIALS
+   ========================================================== */
+
+.testimonials__carousel {
+    position: relative;
+
+    width: 100%;
+
+    overflow: hidden;
+}
+
+
+.testimonials__track {
+    display: flex;
+
+    width: 100%;
+}
+
+
+.testimonial {
+    flex: 0 0 100%;
+}
+
+
+/* ==========================================================
+   14. FAQ
+   ========================================================== */
+
+.faq__list {
+    width: 100%;
+
+    max-width: 900px;
+
+    margin-inline: auto;
+}
+
+
+/* ==========================================================
+   15. CONTACT
+   ========================================================== */
+
+.contact__grid {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 0.8fr)
+        minmax(0, 1.2fr);
+
+    gap: var(--space-12);
+
+    align-items: start;
+}
+
+
+.contact__info {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: var(--space-6);
+}
+
+
+.contact__form {
+    width: 100%;
+}
+
+
+/* ==========================================================
+   16. FORMULARIO
+   ========================================================== */
+
+.form__grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: var(--space-6);
+}
+
+
+.form__group--full {
+    grid-column: 1 / -1;
+}
+
+
+/* ==========================================================
+   17. FOOTER
+   ========================================================== */
+
+.footer__grid {
+    display: grid;
+
+    grid-template-columns:
+        1.5fr
+        1fr
+        1fr
+        1fr;
+
+    gap: var(--space-10);
+}
+
+
+.footer__column {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: var(--space-3);
+}
+
+
+.footer__bottom {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: var(--space-6);
+
+    margin-top: var(--space-10);
+
+    padding-top: var(--space-6);
+
+    border-top: 1px solid var(--color-border);
+}
+
+
+/* ==========================================================
+   18. MODAL
+   ========================================================== */
+
+.modal {
+    display: grid;
+
+    place-items: center;
+}
+
+
+.modal__content {
+    width: min(
+        100% - 2rem,
+        600px
+    );
+}
+
+
+/* ==========================================================
+   19. BOTÓN BACK TO TOP
+   ========================================================== */
+
+.back-to-top {
+    position: fixed;
+
+    right: var(--space-6);
+
+    bottom: var(--space-6);
+
+    z-index: var(--z-sticky);
+}
