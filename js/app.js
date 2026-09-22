@@ -2,6 +2,7 @@ import { initNavbar } from "./navbar.js";
 import { initDropdown } from "./dropdown.js";
 import { initModal } from "./modal.js";
 import { initToast } from "./toast.js";
+import { initTabs } from "./tabs.js";
 
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -9,5 +10,6 @@ document.addEventListener("DOMContentLoaded", () => {
     initDropdown();
     initModal();
     initToast();
+    initTabs();
 
 });
