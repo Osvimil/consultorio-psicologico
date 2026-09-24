@@ -4,6 +4,7 @@ import { initModal } from "./modal.js";
 import { initToast } from "./toast.js";
 import { initTabs } from "./tabs.js";
 import { initTooltip } from "./tooltip.js";
+import { initCarousel } from "./carousel.js";
 document.addEventListener("DOMContentLoaded", () => {
 
     initNavbar();
@@ -12,4 +13,5 @@ document.addEventListener("DOMContentLoaded", () => {
     initToast();
     initTabs();
     initTooltip();
+    initCarousel();
 });
