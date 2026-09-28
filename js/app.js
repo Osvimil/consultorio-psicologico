@@ -5,6 +5,7 @@ import { initToast } from "./toast.js";
 import { initTabs } from "./tabs.js";
 import { initTooltip } from "./tooltip.js";
 import { initCarousel } from "./carousel.js";
+import { initParallax } from "./parallax.js";
 document.addEventListener("DOMContentLoaded", () => {
 
     initNavbar();
@@ -14,4 +15,5 @@ document.addEventListener("DOMContentLoaded", () => {
     initTabs();
     initTooltip();
     initCarousel();
+    initParallax();
 });
