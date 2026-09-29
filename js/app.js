@@ -6,6 +6,7 @@ import { initTabs } from "./tabs.js";
 import { initTooltip } from "./tooltip.js";
 import { initCarousel } from "./carousel.js";
 import { initParallax } from "./parallax.js";
+import { initAccordion } from "./accordion.js";
 document.addEventListener("DOMContentLoaded", () => {
 
     initNavbar();
@@ -16,4 +17,5 @@ document.addEventListener("DOMContentLoaded", () => {
     initTooltip();
     initCarousel();
     initParallax();
+    initAccordion();
 });
