@@ -9,6 +9,7 @@ import { initParallax } from "./parallax.js";
 import { initAccordion } from "./accordion.js";
 import { initCounter } from "./counter.js";
 import { initScrollSpy } from "./scrollspy.js";
+import { initDarkMode } from "./darkmode.js";
 document.addEventListener("DOMContentLoaded", () => {
 
     initNavbar();
@@ -22,4 +23,5 @@ document.addEventListener("DOMContentLoaded", () => {
     initAccordion();
     initCounter();
     initScrollSpy();
+    initDarkMode();
 });
