@@ -7,6 +7,7 @@ import { initTooltip } from "./tooltip.js";
 import { initCarousel } from "./carousel.js";
 import { initParallax } from "./parallax.js";
 import { initAccordion } from "./accordion.js";
+import { initCounter } from "./counter.js";
 document.addEventListener("DOMContentLoaded", () => {
 
     initNavbar();
@@ -18,4 +19,5 @@ document.addEventListener("DOMContentLoaded", () => {
     initCarousel();
     initParallax();
     initAccordion();
+    initCounter();
 });
